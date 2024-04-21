@@ -5,12 +5,24 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
     min-height: 100vh; /* Mínimo 100% del viewport height */
+    background-color: black; /* Fondo negro */
+    color: #E5E5E5; /* Color del texto */
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
+.cv-section {
     padding: 20px;
+    border-radius: 5px;
+    background-color: #14213D; /* Azul oscuro */
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FCA311; /* Naranja */
+    padding: 20px;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
 }
 
 main {
@@ -18,25 +30,45 @@ main {
     grid-template-columns: 1fr 3fr; /* Aside 1/4, Main 3/4 */
     grid-gap: 20px;
     padding: 20px;
-    height: calc(100vh - 2 * 20px - 2 * 20px); /* Restar padding de body y main */
+    margin-top: 60px; /* Ajusta el contenido para que no quede detrás del encabezado */
     overflow: auto; /* Añadir scroll si el contenido es más largo que la pantalla */
 }
 
-aside {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-section {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
 footer {
-    text-align: center;
-    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #FCA311; /* Naranja */
+    padding: 20px;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
 }
+
+a.repo-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333; /* Negro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid #333; /* Añadir un borde */
+}
+
+a.repo-link:hover {
+    background-color: #FCA311; /* Naranja */
+    border: 1px solid #FCA311; /* Cambiar el color del borde al pasar el cursor */
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #E5E5E5; /* Azul claro */
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
