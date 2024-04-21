@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+    min-height: 100vh; /* Mínimo 100% del viewport height */
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Aside 1/4, Main 3/4 */
+    grid-gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 2 * 20px - 2 * 20px); /* Restar padding de body y main */
+    overflow: auto; /* Añadir scroll si el contenido es más largo que la pantalla */
+}
+
+aside {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
