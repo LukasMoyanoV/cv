@@ -3,74 +3,73 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
-    min-height: 100vh; /* Mínimo 100% del viewport height */
-    background-color:#101935; /* Azul de la paleta */
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    background-color:#101935; 
     color: #101935;
 }
 
 
 header {
-    position: fixed; /* Fijar en la parte superior */
-    top: 0; /* Alinear en la parte superior */
-    width: 100%; /* Ancho completo */
-    background-color:#DDDBF1; /* Naranja */
-    color: #101935; /* Letras blancas */
-    padding: 10px 0; /* Un tercio menos de altura */
-    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color:#DDDBF1; 
+    color: #101935; 
+    padding: 10px 0; 
+    z-index: 1000; 
 }
 
 .carnet-photo {
     display: block;
-    width: 200px; /* Tamaño de la foto duplicado */
+    width: 200px; 
     height: auto;
-    margin: 0 auto 20px; /* Centrar la imagen y agregar espacio inferior */
+    margin: 0 auto 20px; 
 }
 
 footer {
-    position: fixed; /* Fijar en la parte inferior */
-    bottom: 0; /* Alinear en la parte inferior */
-    width: 100%; /* Ancho completo */
-    background-color: #DDDBF1; /* Negro */
-    color: #DDDBF1; /* Letras blancas */
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #DDDBF1; 
+    color: #DDDBF1; 
     text-align: center;
-    padding: 20px 0; /* Doble de alto */
-    margin-top: 20px; /* Espacio adicional */
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
-/* Estilos para el botón */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 50px; /* Bordes circulares */
-    background-color: #DDDBF1; /* Blanco */
-    color: #000; /* Letras negras */
-    text-decoration: none; /* Sin subrayado */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 50px;
+    background-color: #DDDBF1;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: #000; /* Negro al hacer hover */
-    color: #DDDBF1; /* Letras blancas al hacer hover */
+    background-color: #000;
+    color: #DDDBF1;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* Aside 1/4, Main 3/4 */
+    grid-template-columns: 1fr 3fr; 
     grid-gap: 20px;
-    padding: 70px 20px; /* Añadir un margen inferior */
-    height: auto; /* Altura automática */
-    overflow: hidden; /* Ocultar el desbordamiento */
-    margin-top: 60px; /* Añadir un margen superior */
-    margin-bottom: 20px; /* Ajustar el margen inferior */
+    padding: 70px 20px;
+    height: auto; 
+    overflow: hidden;
+    margin-top: 60px; 
+    margin-bottom: 20px; 
 }
 
 #employement-history h1 {
-    font-size: 24px; /* Tamaño de fuente para h1 */
+    font-size: 24px; 
 }
 
 #employement-history h2 {
-    font-size: 20px; /* Tamaño de fuente para h2 */
+    font-size: 20px; 
 }
 
 
@@ -86,11 +85,11 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
-    margin-bottom: 20px; /* Agregar espacio inferior */
+    margin-bottom: 20px; 
 }
 
 #profile p {
-    margin-bottom: 10px; /* Ajustar el margen inferior del párrafo */
+    margin-bottom: 10px; 
 }
 
 .skill {
@@ -98,7 +97,7 @@ section {
 }
 
 .progress-bar {
-    background-color: #DDDBF1; /* Naranja */
+    background-color: #DDDBF1; 
     border-radius: 5px;
     height: 10px;
     margin-top: 5px;
@@ -106,13 +105,13 @@ section {
 }
 
 .progress {
-    background-color: #101935; /* Azul */
+    background-color: #101935;
     height: 100%;
 }
 
 #employement-history img {
-    max-width: 50%; /* Establece el ancho máximo al 50% del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    display: block; /* Asegura que la imagen sea un bloque */
-    margin: 0 auto 20px; /* Centra la imagen y agrega espacio inferior */
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px; 
 }
