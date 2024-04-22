@@ -20,7 +20,12 @@ header {
     z-index: 1000; /* Asegurar que esté por encima de otros elementos */
 }
 
-
+.carnet-photo {
+    display: block;
+    width: 200px; /* Tamaño de la foto duplicado */
+    height: auto;
+    margin: 0 auto 20px; /* Centrar la imagen y agregar espacio inferior */
+}
 
 footer {
     position: fixed; /* Fijar en la parte inferior */
@@ -32,7 +37,6 @@ footer {
     padding: 20px 0; /* Doble de alto */
     margin-top: 20px; /* Espacio adicional */
 }
-
 
 /* Estilos para el botón */
 .button {
@@ -85,6 +89,9 @@ section {
     margin-bottom: 20px; /* Agregar espacio inferior */
 }
 
+#profile p {
+    margin-bottom: 10px; /* Ajustar el margen inferior del párrafo */
+}
 
 .skill {
     margin-bottom: 20px;
@@ -101,4 +108,11 @@ section {
 .progress {
     background-color: #101935; /* Azul */
     height: 100%;
+}
+
+#employement-history img {
+    max-width: 50%; /* Establece el ancho máximo al 50% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto 20px; /* Centra la imagen y agrega espacio inferior */
 }
