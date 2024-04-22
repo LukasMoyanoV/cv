@@ -5,70 +5,100 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
     min-height: 100vh; /* Mínimo 100% del viewport height */
-    background-color: black; /* Fondo negro */
-    color: #E5E5E5; /* Color del texto */
+    background-color:#101935; /* Azul de la paleta */
+    color: #101935;
 }
 
-.cv-section {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #14213D; /* Azul oscuro */
-    margin-bottom: 20px; /* Espacio entre secciones */
-}
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #FCA311; /* Naranja */
-    padding: 20px;
-    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+    position: fixed; /* Fijar en la parte superior */
+    top: 0; /* Alinear en la parte superior */
+    width: 100%; /* Ancho completo */
+    background-color:#DDDBF1; /* Naranja */
+    color: #101935; /* Letras blancas */
+    padding: 10px 0; /* Un tercio menos de altura */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+
+
+footer {
+    position: fixed; /* Fijar en la parte inferior */
+    bottom: 0; /* Alinear en la parte inferior */
+    width: 100%; /* Ancho completo */
+    background-color: #DDDBF1; /* Negro */
+    color: #DDDBF1; /* Letras blancas */
+    text-align: center;
+    padding: 20px 0; /* Doble de alto */
+    margin-top: 20px; /* Espacio adicional */
+}
+
+
+/* Estilos para el botón */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Bordes circulares */
+    background-color: #DDDBF1; /* Blanco */
+    color: #000; /* Letras negras */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.button:hover {
+    background-color: #000; /* Negro al hacer hover */
+    color: #DDDBF1; /* Letras blancas al hacer hover */
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Aside 1/4, Main 3/4 */
     grid-gap: 20px;
-    padding: 20px;
-    margin-top: 60px; /* Ajusta el contenido para que no quede detrás del encabezado */
-    overflow: auto; /* Añadir scroll si el contenido es más largo que la pantalla */
+    padding: 70px 20px; /* Añadir un margen inferior */
+    height: auto; /* Altura automática */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    margin-top: 60px; /* Añadir un margen superior */
+    margin-bottom: 20px; /* Ajustar el margen inferior */
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #FCA311; /* Naranja */
-    padding: 20px;
-    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+#employement-history h1 {
+    font-size: 24px; /* Tamaño de fuente para h1 */
 }
 
-a.repo-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #333; /* Negro */
-    color: white;
-    text-decoration: none;
+#employement-history h2 {
+    font-size: 20px; /* Tamaño de fuente para h2 */
+}
+
+
+aside {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    border: 1px solid #333; /* Añadir un borde */
 }
 
-a.repo-link:hover {
-    background-color: #FCA311; /* Naranja */
-    border: 1px solid #FCA311; /* Cambiar el color del borde al pasar el cursor */
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px; /* Agregar espacio inferior */
 }
+
 
 .skill {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .progress-bar {
-    background-color: #E5E5E5; /* Azul claro */
+    background-color: #DDDBF1; /* Naranja */
     border-radius: 5px;
     height: 10px;
     margin-top: 5px;
     overflow: hidden;
 }
 
+.progress {
+    background-color: #101935; /* Azul */
+    height: 100%;
+}
